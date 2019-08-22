@@ -1,0 +1,29 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+<style>
+.card{
+    background: -o-linear-gradient(rgba(228,221,27,.7),rgba(228,221,27,.2));
+    background: -webkit-linear-gradient(rgba(228,221,27,.7),rgba(228,221,27,.2));
+    background: -moz-linear-gradient(rgba(228,221,27,.7),rgba(228,221,27,.2));
+    background: linear-gradient(rgba(228,221,27,.7),rgba(228,221,27,.2))
+}
+</style>
+
+
+            
+
+<section class="card rgba-green-light wow flipInY">
+    
+    <div class="card-body text-center py-5 px-5 my-5">
+        <h1 style='color:yellow'align='center'>OUPS ! vous avez perdu {{ request.user.username | upper }}</h1>
+        <p style='color:black'align='center'>La perte endurer vous sera retirer directement sur votre compte bancaire<p>
+        <h1 class="mb-4" style='color:black'>
+            <strong>Nous esperions vous revoir, Merci et a Bientôt!</strong>
+        </h1>
+        <a href="{% url 'app_pari:disconnect' %}" class="btn btn-outline-yellow btn-lg" id="start">Se deconnecter
+        </a>
+    </div>
+    
+</section>
+
+{% endblock content %}

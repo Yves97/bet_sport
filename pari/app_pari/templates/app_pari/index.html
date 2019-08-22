@@ -1,0 +1,21 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+<style>
+  .list{
+    list-style:none;
+    font-size:2rem;
+  }
+  h5{
+    margin-bottom:-1vh;
+  }
+</style>
+    <h1 align='center'>Nous sommes le {{this_day}}</h1>
+    <h5 align='center'>Voici les jours ou l'on peut parier </h5>
+    <div align='center'>
+      <ul class='list'>
+        {% for days in week_day %}
+        <li>{{days}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+{% endblock content %}

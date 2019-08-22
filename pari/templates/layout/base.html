@@ -1,0 +1,59 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--MDB-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+    <!--************************-->
+
+    <title>BET.Sport</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <style type="text/css">
+        @import url("https://fonts.googleapis.com/css?family=Marvel:400,700");
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #56BFB8 !important;
+            }
+        }
+        body{
+          background:-webkit-radial-gradient(circle,rgba(68, 3, 63, 0.623),rgba(68, 3, 63, 0.2));
+          background:-o-radial-gradient(circle,rgba(68, 3, 63, 0.623),rgba(68, 3, 63, 0.2));
+          background:-moz-radial-gradient(circle,rgba(68, 3, 63, 0.623),rgba(68, 3, 63, 0.2));
+          background:radial-gradient(circle,rgba(68, 3, 63, 0.623),rgba(68, 3, 63, 0.2));
+
+          color:black;
+          font-family: "Marvel", sans-serif;
+        }
+      </style>
+  </head>
+  <body>
+  {% include 'layout/nav.html' %}
+  {% include 'layout/header.html' %}
+  {% block content%}{% endblock  %}
+  {% include 'layout/footer.html' %}
+
+  <!-- MDB JS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+</html>
